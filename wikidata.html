@@ -1,0 +1,93 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Wikidata</title>
+  </head>
+  <body>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.rawgit.com/wikimedia/wikidata-query-gui/master/wikibase/queryService/api/Sparql.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+  var api = new wikibase.queryService.api.Sparql();
+  var titles = ['Move', 'Five Years', 'Am Ende der Milchstraße', 'The Farewell Party', 'Mad Love', 'Arteholic', 'To Life!', 'The Minister', 'Be My Baby', 'Benda Bilili!', 'Bethlehem', 'The Blue Room', 'Chico & Rita', 'Far From Men', 'The German Friend', 'Digitale Dissidenten', 'Dr. Ketel', 'Duran Duran: Unstaged', 'In Order of Disappearance', 'Lamb', 'Erwin Wurm – The Artist who Swallowed the World', 'Fassbinder', 'Finn', 'For No Eyes only', 'Foto: Ostkreuz', 'Zurich', 'The Priest’s Children', 'Heart of a Dog', 'Bosch, the Garden of Dreams', 'Hockney', 'Holy Motors', 'Hotel', 'I Am a Woman Now', 'I Want to Run', 'I Travel Alone', 'Ida', 'In the Basement', 'In the Fog', 'Imagine', 'In the Crosswind', 'Inuk', 'It Might Get Loud', 'Jack', 'Janis. Little Girl Blue', 'Joe Strummer – The Future is Unwritten', 'Goodbye First Love', 'The Virgin, the Copts and Me', 'You, the Living', 'Kent Nagano – Montreal Symphony', 'The Fencer', 'Love Sick', 'love, peace & beatbox', 'Lovely Rita', 'Corn Island', 'The Man Who Loved Yngve', 'Master of the Universe', 'Sidewalls', 'Wednesday 4:45', 'Die Moskauer Prozesse', 'Much Loved', 'Nairobi Half Life', 'Noise and Resistance', 'Heavenly Nomadic', 'The Parade', 'Passion for Planet', 'The Pearl Button', 'Policeman', 'Prince Avalanche', 'A Man, His Lover, and His Mother', 'Tom at the Farm', 'Don\'t Look at Me That Way', 'Shut Up and Play the Hits', 'Sing Your Song', 'Song from the Forest', 'Songs from the Second Floor', 'Civil Servants', 'My Skinny Sister', 'Still Walking', 'Rams', 'Submarine', 'Tabu', 'Tangerine', 'Timbuktu', 'Tom Sawyer And His Friends', 'Trans Bavaria', 'Trash Detective', 'Tsatsiki, Mom and the Policeman', 'Suzanne', 'The Culpable', 'Violently Happy', 'Violeta Went to Heaven', 'Then Is It the End?', 'West is West', 'Winter Nomads', 'The Amazing Catfish', 'Zen for Nothing', 'The Past', 'The Artist and the Model', 'Standing in the Shadows of Motown', 'Trouble', 'Lost and Found Box of Human Sensation, A', 'Hackney Lullabies', 'Raju', 'Coupling', 'MPA - Medical Psychological Assessment', 'Ronaldo', 'Julian', 'Berlin Recyclers', 'Grimm’s Cuckoo', 'German Loves His Fatherland, A', 'Bruce Lee Played Badminton Too', 'By the Pool', 'Five Minute Love Story', 'Maybe later', 'Kiosk, The', 'Chopper', 'Luminaris', 'Summer Bummer', 'Amber Amulet, The', 'Breaking Through', 'My Brother, Mikael', 'Moritz and the Woodwose', 'Montauk', 'I Am John Wayne', 'Iceberg', 'Mike', 'Amar', 'Alienation', 'Rain', 'Circuit', 'Parking Love', 'We Will Stay In Touch About It', 'Delay', 'Run, The', 'Coach', 'Little Secret', 'Pastrami', 'Terminally Happy', 'Dynamic Double Standard, The', 'What happens in your brain if you see a German word like ...?', 'Baits and Hooks', 'Clumsy Little Acts of Tenderness', 'For your own safety', 'Wild Boar, The', 'It was damp, dark and smelled like wood', 'United Interest', 'Wider Horizons', '0068 Sniper`s Nest', 'Somebody Else', 'Quiet on Set', 'Guard Dog', 'Follow The Frog', 'In Passing', 'Nada S.A.', 'La lisière', 'Morning Prayers', 'Drone', 'Boles', 'Green Screen Gringo', 'Working with Animals', 'Bergfieber', 'Meryem', 'Aenigma', 'Mellenu Gari', 'Gamer Girl', 'Deine Fremde', 'In Kropsdam Is Iedereen Gelukkig', 'Tiefenschärfe', 'Zwischen den Fronten', 'Less Than Human', 'Life Cycles', 'And The Moon Stands Still', 'Quando os Dias Eram Eternos', 'Penelope', 'Somersault Pike', 'Downside Up', 'Obedience', 'Superperson', 'Onión', 'Nachtstück', 'Men Talk About Mother', 'Slovo', 'G-AAAH', 'The President\'s Visit', 'Kapitalistis', 'Die Geschichte der Bildstörung in 1 Minute', 'El Amor Ciego', '(Fool Time) Job', 'Expire', 'Zarte Momente', 'Stargoats', 'Sheepo', 'Berta', 'Manivald', 'Kut', 'Den Sniffe', 'Espresso', 'Afterword', 'Dobermann', 'Tracing Coyotes - A dog crosses my way', 'Kai', 'Imbiss', 'Long Yearning', 'Szép Alak', 'First Like', 'Le Grand Bain', 'The Kiss', 'Melancholic Drone', 'Arr for a scene', 'The giraffe without a leg', 'Monday', 'To my father', 'Ambaradan', 'Amira', 'Santa Claus', 'BELES - The season of prickly pears', 'Teacher Children', 'Ghetto PSA', 'La Linea', 'Flat 4 Safari–Cirillo', 'Johnny', 'The Delivery', 'The Stain', 'The Play', 'Shipwreck with Spectator', 'Can I come in?', 'Almost Tomorrow', 'Zaza, Kurd', 'Vittorio De Seta - Master of Cinema'];
+var q = [];
+titles.forEach(function (title, index) {
+//	getItemId(title);
+});
+
+
+function getItemId( title ) {
+  var query = 'SELECT ?item WHERE { ?item wdt:P31 wd:Q11424.   ?item rdfs:label "'+ title +'"@en .}';
+  api.query(query).done(function( data ) {
+    $.each(data.results.bindings, function(key, value) {
+      console.log( value.item.value.split('/').pop() );
+      q.push( value.item.value.split('/').pop() );
+    });
+  });
+}
+
+$( document ).ready(function() {
+  var ids =  ["Q6926481","Q51391647","Q13537994","Q17592291","Q851825","Q15834343","Q3428553","Q19894499","Q1338623","Q16164158","Q15260449","Q17810451","Q1426803","Q1883105","Q3766322","Q19544638","Q3006902","Q586538","Q15016365","Q16864665","Q7718829","Q15974288","Q7736213","Q17422072","Q15729024","Q6481017","Q19954562","Q20751329","Q19816739","Q15392164","Q16295121","Q20817245","Q307620","Q20751324","Q21031165","Q304739","Q689230","Q1630801","Q2396492","Q33539524","Q2192584","Q1655295","Q1656302","Q15087230","Q18170085","Q1252050","Q6002660","Q16411353","Q3228255","Q1471358","Q3157105","Q10538880","Q17092796","Q20899475","Q39074400","Q2073748","Q3213750","Q387727","Q16933688","Q2065757","Q48674418","Q1233213","Q1072584","Q1195060","Q3521489","Q3521492","Q4743100","Q7744733","Q16255917","Q17461209","Q17639893","Q18708988","Q6898615","Q1931267","Q3281244","Q1798900","Q3809701","Q6266181","Q12982893","Q19572307","Q26706737","Q33542835","Q43259930","Q19926412","Q3989447","Q16253032","Q21005818","Q2051292","Q21711246","Q18959449","Q2893726","Q3608281","Q3530946","Q25676463","Q1646330","Q7522740","Q19961534","Q2301516","Q20899514","Q874074","Q6787651","Q19824842","Q48965620","Q260509","Q2172512","Q587579","Q1748666","Q19263995","Q43279424","Q3531190","Q16653473","Q2448813","Q22686357","Q3505881","Q12776977","Q13553881","Q17022415","Q17639612","Q25396884","Q20992089","Q27042457","Q19984067","Q14348901","Q16827802","Q3421359","Q6357059","Q16724979","Q55635451","Q2913658","Q977471","Q3540854","Q3999776","Q12129798","Q48674090","Q64564730","Q21027936","Q128855","Q9666370","Q20899404","Q3313181","Q6845816","Q454665","Q40106710","Q2127904","Q7284451","Q7284452","Q12127025","Q20004206","Q4241876","Q44864712","Q3184703","Q9361457","Q40233169","Q14970982","Q26884526","Q19363582","Q29371919","Q959679","Q1074032","Q3036314","Q12773621"];
+  $('iframe').each(function(x, item) {
+
+     var url = 'https://query.wikidata.org/embed.html#' +  $(item).attr( 'data-query' ).replace( '{ITEMS}', ' wd:' + ids.join( ' wd:' ));
+     console.log( url );
+    $(item).attr( 'src', url  );
+  });
+
+});
+
+</script>
+<h1>Films and Directors</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Graph%0A SELECT  ?item ?itemLabel ?director ?directorLabel ("ddccee" AS ?rgb)  WHERE {  VALUES ?item {{ITEMS}  }    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }  OPTIONAL { ?item wdt:P57 ?director. }}'></iframe>
+
+<h1>Directors Sex</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?sex ?sexLabel ( 1 as ?count ) ?country ?countryLabel  WHERE {  VALUES ?item {{ITEMS}  }   ?item wdt:P57 ?director.  OPTIONAL {?director wdt:P27 ?country.}   ?director wdt:P21 ?sex.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
+
+<h1>Directors Sex in Genre (Animated)</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?sex ?sexLabel ( 1 as ?count ) ?country ?countryLabel ?genre ?genreLabel  WHERE {  VALUES ?item {{ITEMS}  }    OPTIONAL {    ?item wdt:P136 ?genre.    ?genre rdfs:label ?glabel.    FILTER((LANG(?glabel)) = "en")  }      ?item wdt:P57 ?director.  ?director wdt:P27 ?country.  ?director wdt:P21 ?sex.  ?orig wdt:P625 ?coord.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
+
+<h1>Directors Occupation</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?occupation ?occupationLabel (1  AS ?count) ?country ?countryLabel  WHERE {  VALUES ?item {{ITEMS}  }   ?item wdt:P57 ?director.  OPTIONAL {?director wdt:P27 ?country.}   ?director wdt:P106 ?occupation  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
+
+
+<!--
+<h1>Films and Cast</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Graph%0A SELECT ?item ?itemLabel ?cast_member ?cast_memberLabel  ("ddccee" as ?rgb) WHERE {  VALUES ?item {    {ITEMS}  }  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } ?item wdt:P161 ?cast_member.}'
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+-->
+<h1>Cast Sex</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?sex ?sexLabel ( 1 as ?count ) ?country ?countryLabel  WHERE {  VALUES ?item {{ITEMS}  }     OPTIONAL {    ?item wdt:P495 ?orig.  }      ?item wdt:P161 ?cast.  ?cast wdt:P27 ?country.  ?cast wdt:P21 ?sex.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
+
+<h1>Cast Sex in Genre (Animated)</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?sex ?sexLabel ( 1 as ?count ) ?country ?countryLabel ?genre ?genreLabel  WHERE {  VALUES ?item {{ITEMS}  }    OPTIONAL {    ?item wdt:P136 ?genre.    ?genre rdfs:label ?glabel.    FILTER((LANG(?glabel)) = "en")  }      ?item wdt:P161 ?cast.  ?cast wdt:P27 ?country.  ?cast wdt:P21 ?sex.   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
+
+<h1>Cast Occupation</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?occupation ?occupationLabel ( count(?occupation) as ?count )  WHERE {  VALUES ?item {{ITEMS}  }     ?item wdt:P161 ?cast.   ?cast wdt:P106 ?occupation.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } } GROUP BY ?occupation ?occupationLabel HAVING (?count > 5) '></iframe>
+
+<h1>Films and Genres</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Graph%0A SELECT ?item ?itemLabel ?genre ?genreLabel  ("ddccee" as ?rgb)  WHERE {VALUES ?item { {ITEMS}   } .?item wdt:P136 ?genre. SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'
+ referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+<h1>Production Countries and Genres</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?countryLabel   (1 as ?count)  ?genreLabel WHERE {VALUES ?item { {ITEMS}  } .  ?item wdt:P136 ?genre.  ?item wdt:P495 ?country.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }  }'
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+<h1>Production Countries and Genres (Map)</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Map%0A SELECT ?coord ?genre (?glabel AS ?layer) WHERE {  VALUES ?item {{ITEMS}  }  ?item wdt:P495 ?orig.  OPTIONAL {  ?item wdt:P136 ?genre.  ?genre rdfs:label ?glabel.  FILTER((LANG(?glabel)) = "en")}  ?orig wdt:P625 ?coord.   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+<h1>Main Subject</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BubbleChart%0A SELECT ?sub ?subLabel  (count(?sub)  AS ?count)  WHERE {  VALUES ?item {{ITEMS}  }    ?item wdt:P921 ?sub.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+<h1>Publication Date</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Timeline%0A SELECT ?item ?itemLabel ?publication_date ?image WHERE {  VALUES ?item {   {ITEMS}  }  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }  ?item wdt:P577 ?publication_date.   OPTIONAL { ?item wdt:P18 ?image. }}'
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+  </body>
+</html>
