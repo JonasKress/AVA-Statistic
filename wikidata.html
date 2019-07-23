@@ -85,6 +85,11 @@ referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"><
 <iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BubbleChart%0A SELECT ?sub ?subLabel  (1  AS ?count)  WHERE {  VALUES ?item {{ITEMS}  }    ?item wdt:P921 ?sub.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'
 referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
+<h1>Dimensions of Publication Year, Genre, Country, Duration, Color</h1>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Dimensions%0A  SELECT    (YEAR(?publication_date) as ?year) ?genreLabel  ?country_of_originLabel ?duration ?colorLabel WHERE {  VALUES ?item { {ITEMS}  }  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }   ?item wdt:P136 ?genre.    ?item wdt:P577 ?publication_date.    ?item wdt:P495 ?country_of_origin.    ?item wdt:P2047 ?duration.    ?item wdt:P462 ?color. }'
+referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+
 <h1>Publication Date</h1>
 <iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:Timeline%0A SELECT ?item ?itemLabel ?publication_date ?image WHERE {  VALUES ?item {   {ITEMS}  }  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }  ?item wdt:P577 ?publication_date.   OPTIONAL { ?item wdt:P18 ?image. }}'
 referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
