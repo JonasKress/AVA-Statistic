@@ -52,7 +52,7 @@ $( document ).ready(function() {
 <iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?sex ?sexLabel ( 1 as ?count ) ?country ?countryLabel ?genre ?genreLabel  WHERE {  VALUES ?item {{ITEMS}  }    OPTIONAL {    ?item wdt:P136 ?genre.    ?genre rdfs:label ?glabel.    FILTER((LANG(?glabel)) = "en")  }      ?item wdt:P57 ?director.  ?director wdt:P27 ?country.  ?director wdt:P21 ?sex.  ?orig wdt:P625 ?coord.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
 
 <h1>Directors Occupation</h1>
-<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?occupation ?occupationLabel (1  AS ?count) ?country ?countryLabel  WHERE {  VALUES ?item {{ITEMS}  }   ?item wdt:P57 ?director.  OPTIONAL {?director wdt:P27 ?country.}   ?director wdt:P106 ?occupation  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BarChart%0A SELECT ?occupation ?occupationLabel (count(?occupation)  AS ?count) ?country ?countryLabel  WHERE {  VALUES ?item {{ITEMS}  }   ?item wdt:P57 ?director.  OPTIONAL {?director wdt:P27 ?country.}   ?director wdt:P106 ?occupation  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'></iframe>
 
 
 <!--
@@ -82,7 +82,7 @@ referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"><
 referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
 <h1>Main Subject</h1>
-<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BubbleChart%0A SELECT ?sub ?subLabel  (count(?sub)  AS ?count)  WHERE {  VALUES ?item {{ITEMS}  }    ?item wdt:P921 ?sub.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'
+<iframe style="width: 98vw; height: 98vh; border: none;" data-query='#defaultView:BubbleChart%0A SELECT ?sub ?subLabel  (1  AS ?count)  WHERE {  VALUES ?item {{ITEMS}  }    ?item wdt:P921 ?sub.  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }}'
 referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 
 <h1>Publication Date</h1>
